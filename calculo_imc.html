@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo imc</title>
+</head>
+<body>
+    <script>
+        function pulaLinha() {
+            document.write("<br> <br>");
+        }
+        function mostra(frase){
+            document.write(frase);
+            pulaLinha();
+        }
+        
+        function calculaImc(altura, peso) {
+            var imc = ( peso / (altura * altura));
+            return imc;
+        }
+        
+        var imcCarlos = calculaImc(1.70, 75 );
+        var imcNatalia = calculaImc(1.67, 55);
+
+        mostra(imcCarlos)
+        mostra(imcNatalia)
+    </script>
+
+</body>
+</html>

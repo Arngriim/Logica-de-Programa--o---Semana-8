@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gasto de combustivel</title>
+</head>
+<body>
+
+    <h1>Álcool ou Gasolina?</h1>
+    
+    <h3>Seu carro tem um tanque de 40 litros e pode utilizar álcool ou gasolina. </h3>
+        <br>
+        Com gasolina e usando todo o tanque você percorre um caminho com gasolina de 480 quilômetros. Qual é o consumo de gasolina?
+        <br>
+        Com álcool, um tanque de 40 litros fez um caminho com Álcool de 300 quilômetros. Qual é o consumo de Álcool? 
+        <br>
+    </p>
+    
+    <script> 
+        function pulaLinha() {
+            document.write("<br>")
+        }
+
+        
+        var tanque = 40
+        var consumoDeGasolina = 480/tanque
+        var consumoDeAlcool = 300/tanque
+
+        document.write("O gasto de combustivel usando Gasolina é de " + consumoDeGasolina + " litros por km")
+
+        pulaLinha();
+
+        document.write("O gasto com Álcool é de " + consumoDeAlcool + " litros por km")
+
+    </script>
+
+
+</body>
+</html>

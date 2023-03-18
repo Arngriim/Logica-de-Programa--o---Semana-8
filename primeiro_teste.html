@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pulaLinha() {
+            document.write("<br> <br>");      // assim como no html, usamos a Tag <br> para dar espaço entre os itens
+        }
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+    
+    
+        var ano = 2023;
+    
+        mostra("Natalia tem " + (ano - 1997) + " anos");
+                   
+        
+        mostra("Carlos tem " + (ano - 1977) + " anos");
+       
+        
+        mostra("Livia tem " + (ano - 1988) + " anos");
+      
+    
+        ano = 2020;                              // a variante já foi criada antes, então aqui ela apenas recebe outro atributo
+    
+        mostra("Alexandre tem " + (ano - 1989) + " anos");
+        
+    
+        var idadeNatalia = 26;
+        var idadeCarlos = 46;
+        var idadeLivia = 35;
+        var idadeAlexandre = 31;
+    
+        var media = (idadeNatalia + idadeCarlos + idadeLivia + idadeAlexandre)/4;        // aqui é a média de idade deles, a soma, para não precisar usar vários números no cod e acabar sendo confuso.
+        
+        document.write("A media de idade deles é " + Math.round(media ) );  //Math.round significa que eu estou pedindo uma ação matematica de arredondamento do resultado da media de idade
+        pulaLinha();
+    
+        var nome = "Natalia";
+        
+        document.write("A idade de " + nome + " é " + idadeNatalia);
+    
+    </script>
+</body>
+</html>
